@@ -1,6 +1,6 @@
 <!--./index.js-->
 
-fetch('/Data/episodes.json')
+fetch('./Data/episodes.json')
   .then((response) => response.json())
   .then((json) => JSON.parse(json))
   .then((myObj) => {
