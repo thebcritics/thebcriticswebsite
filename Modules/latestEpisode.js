@@ -1,6 +1,6 @@
 <!--./index.js-->
 
-fetch('https://github.com/thebcritics/thebcriticswebsite/blob/main/Data/episodes.json')
+fetch('https://raw.githubusercontent.com/thebcritics/thebcriticswebsite/main/Data/episodes.json')
   .then((response) => response.json())
   .then((json) => JSON.parse(json))
   .then((myObj) => {
