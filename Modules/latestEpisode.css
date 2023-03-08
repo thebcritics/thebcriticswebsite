@@ -1,0 +1,53 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #dc89f3;
+    overflow: hidden;
+    margin-bottom: 10px;
+    -webkit-overflow-scrolling: auto; /* how in the fuck do i get the module to not do that weird scroll-y nonsense on safari */
+  }
+  
+  /* Designing the phone. */
+  
+  .phone {
+    border: 40px solid #ddd;
+    border-width: 55px 7px;
+    border-radius: 40px;
+    margin: 21px 0px 21px 42px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+/*     height: 75vh; */
+    width: 320px;
+    height: 520px;
+    /*transform: scale(0.8, 0.8);  rotateX(30deg) rotateY(0deg) rotateZ(-30deg);*/
+    box-shadow: -3px 3px 0 #BBB, -6px 6px 0 #BBB, -9px 9px 0 #BBB, -12px 12px 0 #BBB, -14px 10px 20px #666;
+  }
+  
+  .phone iframe {
+    border: 0;
+    width: 100%;
+    height: 380px;
+    transform: scale(0.95, 0.95);
+    margin-top: 40px;
+  }
+  
+  
+  @media (max-height:850px) {
+    #wrapper {
+      transform: scale(0.95, 0.95);
+      transform-origin: left top;
+    }
+  }
+  
+  @media (max-height:700px) {
+    #wrapper {
+      transform: scale(0.75, 0.75);
+      transform-origin: left top;
+    }
+  }
+  
+  @media (max-height:500px) {
+    #wrapper {
+      transform: scale(0.55, 0.55);
+      transform-origin: left top;
+    }
+  }
